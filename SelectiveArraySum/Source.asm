@@ -4,6 +4,11 @@ INCLUDE Irvine32.inc
 
 
 .data
+array SDWORD 10,60,20,33,72,89,45,65,72,18
+sample SDWORD 50
+sum SDWORD 0
+message BYTE "The result is :",0
+ArraySize = LENGTHOF array
 
 .code
 SelectiveSummation PROC
@@ -12,6 +17,7 @@ SelectiveSummation PROC
 SelectiveSummation ENDP
 
 main PROC
+
 	exit
 main ENDP
 END main
